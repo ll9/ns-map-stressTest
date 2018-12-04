@@ -68,23 +68,31 @@ document.addEventListener("DOMContentLoaded", () => {
     let bu10000 = document.getElementById("10000-features");
 
     bu10.onclick = function () {
+        let features = []
         for (let i = 0; i < 10; i++) {
-            source.addFeature(getRandomFeature());
+            features.push(getRandomFeature())
         }
+        source.addFeatures(features)
     }
     bu100.onclick = function () {
+        let features = []
         for (let i = 0; i < 100; i++) {
-            source.addFeature(getRandomFeature());
+            features.push(getRandomFeature())
         }
+        source.addFeatures(features)
     }
     bu1000.onclick = function () {
+        let features = []
         for (let i = 0; i < 1000; i++) {
-            source.addFeature(getRandomFeature());
+            features.push(getRandomFeature())
         }
+        source.addFeatures(features)
     }
     bu10000.onclick = function () {
+        let features = []
         for (let i = 0; i < 10000; i++) {
-            source.addFeature(getRandomFeature());
+            features.push(getRandomFeature())
         }
+        source.addFeatures(features)
     }
 });
